@@ -1,0 +1,20 @@
+<head>
+  <link media="print" rel="stylesheet" href="print.css">
+  <script>    
+  </script> 
+</head>
+<main>
+  <div id="print" >
+  <body onload="window.print();">
+  <input type="button" value="印刷する" onclick="window.print()">
+  <section class="print-style">
+    <div class="print-page">
+      <p class="print-start">印刷用画面</p>
+      <p class="print-title"><%= @page.title %></p>
+      <p class="print-text"><%= @page.text %></p>
+      <p class="print-end">終了</p>
+    </div>
+  </section>
+  </body>
+  </div>
+</main>
